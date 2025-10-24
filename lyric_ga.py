@@ -130,7 +130,7 @@ def write_fitness(pop, gen):
     fitnesses = [p["fitness"] for p in pop]
     mean = sum(fitnesses)/len(fitnesses)
 
-    print("{:4d}\tmax: {:.3f}\tmin: {:.3f}\tmean: {:.3f}\t best: {}".format(gen,max(fitnesses),min(fitnesses),mean,pop[0]["solution"]))
+    st.write("{:4d}\tmax: {:.3f}\tmin: {:.3f}\tmean: {:.3f}\t best: {}".format(gen,max(fitnesses),min(fitnesses),mean,pop[0]["solution"]))
 
 
 # Check to see whether the solution string is in the list of lyrics
@@ -273,3 +273,4 @@ The arguments and their default values for the do_the_ga() function in lyric_ga.
 
 
 """
+
