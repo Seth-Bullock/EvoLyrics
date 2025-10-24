@@ -1,6 +1,7 @@
 import random       # from the 'random' library, we will use "seed", "choice", "sample", "randrange", "random"
 import pickle       # we'll use this library to read in the lyric corpus
 
+import streamlit as st
 
 # Initialise the GA population
 #   Fill an empty population array with N = pop_size random individuals
@@ -269,5 +270,6 @@ The arguments and their default values for the do_the_ga() function in lyric_ga.
             (pressure=0 means no selection for fitter parents; pressure=10 means very strong selection)
 
   converged: True or False - specifies if the initial generation should contain identical solutions or not 
+
 
 """
